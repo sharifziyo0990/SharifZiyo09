@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(https://www.hdcarwallpapers.com/walls/2015_vorsteiner_bmw_yas_marina_blue_gtrs4_anniversary_edition-HD.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: aqua;
+}
+
+header h1 {
+    margin-top: 30px;
+    z-index: 100;
+}
+
+/* Modal */
+
+.main-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-modal .modal {
+    margin-top: 200px;
+    color: aqua;
+    background-color: black;
+    width: 300px;
+    height: 120px;
+    padding: 10px;
+    border: 3px solid aqua;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.main-modal .modal .modal-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-modal .modal .modal-head i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.main-modal .modal .modal-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main-modal .modal .modal-body input {
+    width: 200px;
+    height: 25px;
+    font-size: 18px;
+    color: aqua;
+    background-color: black;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.main-modal .modal .modal-body button {
+    background-color: black;
+    color: aqua;
+    border: 2px solid aqua;
+    width: 60px;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.main-modal .modal .modal-body button:hover {
+    background-color: aqua;
+    color: black;
+    transition: ease 0.3s;
+}
+
+.main-modal .modal p {
+    color: red;
+    margin-top: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.overly {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(29, 28, 28, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* Form */
+
+.main-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-form .box {
+    background: rgba(0, 0, 0, 0.8);
+    width: 500px;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 5px;
+    border: 3px solid aqua;
+}
+
+.main-form .todo-head {
+    color: aqua;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.main-form .todo-head label {
+    font-size: 15px;
+}
+
+.main-form .todo-head input {
+    width: 400px;
+    height: 30px;
+    background-color: black;
+    color: aqua;
+    border: 2px solid aqua;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.main-form .todo-head button {
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    margin-left: 14px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.main-form .todo-head button:hover {
+    background-color: aqua;
+    color: black;
+    transition: ease 0.5s;
+
+}
+
+.main-form .todo-head p {
+    color: red;
+}
+
+.main-form .todo-body {
+    color: aqua;
+}
+
+.main-form .todo-body h3{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.main-form .todo-body h2 {
+    text-align: center;
+}
+
+.main-form .todo-body ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.main-form .todo-body ul li i {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.main-form .todo-body ul li p {
+    color: aquamarine;
+}
