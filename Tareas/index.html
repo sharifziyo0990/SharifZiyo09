@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <button id="addTask" class="addTask">Add Task</button>
+    <div class="boxes">
+        <div class="todo">
+            <h2>To do</h2>
+            <ul class="tasks" id="todo-tasks"></ul>
+        </div>
+        <div class="progress">
+            <h2>Progress</h2>
+            <ul class="tasks"></ul>
+        </div>
+        <div class="done">
+            <h2>Done</h2>
+            <ul class="tasks"></ul>
+        </div>
+        <div class="delete">
+            <h2>Delete</h2>
+            <ul class="tasks"></ul>
+        </div>
+    </div>
+
+    <!-- Task Modal-->
+    <div id="taskModal" class=" modal taskModal">
+        <div class="modal-content">
+            <h2>Add a New Task</h2>
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <button id="saveTaskBtn">Save</button>
+            <button id="closeModalBtn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

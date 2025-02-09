@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: black;
+}
+
+.addTask {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  padding: 10px 10px 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: grey;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.addTask:hover {
+  color: white;
+  border: 2px solid grey;
+  transition: 0.5s;
+}
+
+/* Boxes */
+
+.boxes {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 10px;
+  /* border: 2px solid grey; */
+  height: auto;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.todo {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid grey;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.progress {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid grey;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.done {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid grey;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+
+}
+
+.delete {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid grey;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.tasks {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px;
+  height: 100%;
+}
+
+.tasks li:hover {
+  margin-top: 15px;
+  cursor: grab;
+  transition: 0.5s;
+}
+
+.tasks li {
+  margin-top: 10px;
+  cursor: grab;
+  transition: 0.5s;
+  display: flex;
+  gap: 10px;
+}
+
+.tasks li span {
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: grey;
+}
+
+.todo .tasks li {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 7px;
+}
+
+.progress .tasks li {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid orange;
+  color: orange;
+  border-radius: 7px;
+}
+
+.done .tasks li {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 7px;
+}
+
+.delete .tasks li {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 7px;
+}
+
+@media (max-width: 1190px) {
+  .boxes {
+    display: block;
+  }
+
+  .tasks {
+    width: 100%;
+  }
+}
+
+
+/* Task Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  color: white;
+}
+
+
+.modal-content {
+  background: none;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
